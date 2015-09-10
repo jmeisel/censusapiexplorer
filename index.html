@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Census API Explorer</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" >
+  <link href="css/query.css" rel="stylesheet" >
+  <script type="text/javascript" src="js/tabs.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery-xdomainrequest.js"></script>
+  <script type="text/javascript" src="js/affix.js"></script>
+  <script type="text/javascript" src="js/jquery.autosize.js"></script>
+  <script type="text/javascript" src="js/mrl-query.js"></script>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+      <h2>What kind of data can be found in the Census APIs?</h2>
+
+      <table class="table">
+        <thead>
+            <tr>
+          <tr class="active">
+                <td></td>
+                <th><img src="./img/citysdk.png" style="height:30px"/><p>CitySDK</p></th>
+                <th><img src="./img/geography.png" style="height:30px"/><p>Geography</p></th>
+                <th><img src="./img/people.png" style="height:30px"/><p>People</p></th>
+                <th><img src="./img/economy.png" style="height:30px"/><p>Economy</p></th>
+                <th><img src="./img/manufacturing.png" style="height:30px"/><p>Industrial</p></th>
+                <th><img src="./img/housing.png" style="height:30px"/><p>Housing</p></th>
+                <th><img src="./img/commuting.png" style="height:30px"/><p>Commuting</p></th>
+                <th><img src="./img/education.png" style="height:30px"/><p>Education</p></th>
+                <th><img src="./img/medical.png" style="height:30px"/><p>Medical</p></th>
+                <th><img src="./img/international.png" style="height:30px"/><p>World</p></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="success">
+                <td>American Community Survey 3 Year Data (2013, 2012)</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>---</td>
+            </tr>
+            <tr class="info">
+                <td>3</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>---</td>
+            </tr>
+            <tr class="warning">
+                <td>4</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>---</td>
+            </tr>
+            <tr class="danger">
+                <td>5</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>yes</td>
+                <td>---</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+      <h2>CitySDK</h2>
+
+<h2>American Community Survey</h2>
+
+<p>The American Community Survey (ACS) is an ongoing survey that provides data every year -- giving communities the current information they need to plan investments and services. The ACS covers a broad range of topics about social, economic, demographic, and housing characteristics of the U.S. population. Much of the ACS data provided on the Census Bureau's Web site are available separately by age group, race, Hispanic origin, and sex. The 5-year estimates from the ACS are "period" estimates that represent data collected over a period of time. The primary advantage of using multiyear estimates is the increased statistical reliability of the data for less populated areas and small population subgroups.</p>
+<p><small>For detailed documentation:</small></p>
+<a class="btn btn-primary btn-sm" href="http://www.census.gov/data/developers/data-sets/acs-survey-5-year-data.html">View API Docs</a>
+<p></p> 
+<p><small>Hit the run button for example API Query:</small></p>
+
+    <div class="api-explorer">
+        <div class="query">
+        </div>
+        <div class="explorer">
+    <div class="api-explorer-form">
+      <textarea class="form-control api-explorer-query autosize" rows="1" style="display:none;">http://api.census.gov/data/2011/acs5?key=21ca50e1a3e22cf2b18083748c278199395408ec&get=B25070_003E,NAME&for=county:*&in=state:06</textarea>
+
+      <button class="btn go" type="button"><img src="./img/run.png" style="height:20px"/>http://api.census.gov/data/2011/acs5</button>
+    </div>
+    <div class="return">
+      <div class="response api-explorer-section">
+        <pre><span class="default"></span></pre>
+      </div>
+    </div>
+        </div>
+      </div>
+
+
+<h2>Decennial Census</h2>
+
+    <h2 id="resource-url">Resource URL</h2>
+
+    <div class="api-explorer">
+        <div class="query">
+        </div>
+        <div class="explorer">
+    <div class="api-explorer-form">
+      <textarea class="form-control api-explorer-query autosize" rows="1" style="display:none;">http://api.census.gov/data/2011/acs5?key=21ca50e1a3e22cf2b18083748c278199395408ec&get=B25070_003E,NAME&for=county:*&in=state:06</textarea>
+
+      <button class="btn go" type="button"><img src="./img/citysdk.png" style="height:20px"/>http://api.census.gov/data/2011/acs5</button>
+    </div>
+    <div class="return">
+      <div class="response api-explorer-section">
+        <pre><span class="default"></span></pre>
+      </div>
+    </div>
+        </div>
+      </div>
+
+
+
+
+
+</body>
+
+
+
+<script TYPE="text/javascript">
+
+  function filter(data,topic) {
+    //define new Array
+    var new_array = []
+    for(var i in data){
+      if(data[i]["type"] === topic){
+         // console.log(data[i]["subject"]["name"])
+        //append the relevant object to new Array
+        new_array.push(data[i])
+
+      }
+    }
+    // return new array in here to be appended
+    return new_array
+  }
+
+
+  $(".nav-tab a").click(function(){
+  	var topic_href = $(this).attr('href').replace("#","");
+  	var page_data = filter(data,topic_href)
+    console.log(page_data);
+
+    $(".content-data").empty();
+    for(var i in page_data){
+      console.log(page_data[i]['type']);
+     // $(".content-data").append("<ul><li>" + page_data[i]['sname'] + "</li><li>" + page_data[i]['sid'] + "'></li></ul>");
+      $(".content-data").append("<ul><li>" + page_data[i]['type'] + "</li><li>" + page_data[i]['description1'] + "</li></ul>");
+    }
+
+  });
+
+</script>
+
+
+</html>
